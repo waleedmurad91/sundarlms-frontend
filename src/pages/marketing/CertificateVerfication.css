@@ -1,0 +1,325 @@
+@theme {
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+}
+
+.certificate-viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-inline: auto;
+  max-width: 980px;
+  width: 100%;
+}
+
+.certificate-preview-shell {
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(220, 38, 38, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #fff8f8 100%);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  padding: 12px;
+}
+
+.certificate-preview-shell__inner {
+  overflow: hidden;
+  width: 100%;
+}
+
+.certificate-preview-stage {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.certificate-preview-transform {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform-origin: top center;
+}
+
+.certificate-pdf,
+.certificate-pdf * {
+  box-sizing: border-box;
+  font-family: Arial, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.certificate-pdf {
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+.certificate-pdf--preview {
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+}
+
+.certificate-border {
+  border: 4px solid #b91c1c;
+  height: 100%;
+  padding: 40px 62px 42px;
+  position: relative;
+  width: 100%;
+}
+
+.corner {
+  border-color: #db1c1c;
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.corner.tl {
+  border-left: 3px solid #B91C1C;
+  border-top: 3px solid #B91C1C;
+  left: 12px;
+  top: 12px;
+}
+
+.corner.tr {
+  border-right: 3px solid #B91C1C;
+  border-top: 3px solid #B91C1C;
+  right: 12px;
+  top: 12px;
+}
+
+.corner.bl {
+  border-bottom: 3px solid #B91C1C;
+  border-left: 3px solid #B91C1C;
+  bottom: 12px;
+  left: 12px;
+}
+
+.corner.br {
+  border-bottom: 3px solid #B91C1C;
+  border-right: 3px solid #B91C1C;
+  bottom: 12px;
+  right: 12px;
+}
+
+.certificate-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.certificate-logo {
+  display: block;
+  margin: 0 auto 0px;
+  width: 120px;
+}
+
+.school-name {
+  color: #b91c1c;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.08;
+}
+
+.school-subtitle {
+  color: #374151;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.certificate-title {
+  color: #111827;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+.presented-text {
+  color: #4b5563;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+.student-name {
+  background-color: #fef3f2;
+  border-left: 3px solid #b91c1c;
+  border-right: 3px solid #b91c1c;
+  color: #111827;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin: 14px auto 0;
+  max-width: 100%;
+  padding: 8px 22px;
+  word-break: break-word;
+}
+
+.program-text {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.45;
+  margin-top: 16px;
+}
+
+.program-highlight {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.date-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 28px auto 0;
+  width: 100%;
+}
+
+.date-box {
+  border: 1px solid #e5e7eb;
+  min-width: 205px;
+  padding: 10px 14px;
+}
+
+.date-label {
+  color: #6b7280;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.date-value {
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.signature-section {
+  margin-top: auto;
+  padding-top: 24px;
+  width: 100%;
+}
+
+.signature-grid {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  padding-inline: 110px;
+  width: 100%;
+}
+
+.signature-block {
+  align-items: center;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  max-width: 260px;
+  text-align: center;
+}
+
+.signature-image-wrap {
+  align-items: flex-end;
+  display: flex;
+  height: 82px;
+  justify-content: center;
+  width: 100%;
+}
+
+.signature-img {
+  display: block;
+  height: 70px;
+  margin: 0 auto 2px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.signature-img--head {
+  filter: brightness(0.1);
+  height: 100px;
+}
+
+.signature-line {
+  border-top: 1px solid #111827;
+  margin: 0 auto 6px;
+  max-width: 100%;
+  width: 170px;
+}
+
+.signature-name {
+  color: #111827;
+  font-size: 15px;
+  font-weight: 700;
+  min-height: 18px;
+}
+
+.signature-role {
+  color: #374151;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.download-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.download-btn {
+  background-color: #b91c1c;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 14px 30px rgba(185, 28, 28, 0.22);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  min-height: 52px;
+  padding: 0 28px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #991b1b;
+  box-shadow: 0 18px 36px rgba(153, 27, 27, 0.28);
+  transform: translateY(-1px);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+.download-btn:disabled {
+  background-color: #ef4444;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .certificate-preview-shell {
+    border-radius: 20px;
+    padding: 6px;
+  }
+
+  .download-btn {
+    min-height: 48px;
+    padding: 0 20px;
+    width: 100%;
+  }
+}

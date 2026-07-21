@@ -1,0 +1,296 @@
+/* ─────────────────────────────────────────────
+   App Privacy Policy — creative timeline design
+   ───────────────────────────────────────────── */
+:root {
+  --app-navy: #000080;
+  --app-navy-deep: #000050;
+  --app-crimson: #a51c30;
+  --app-crimson-dark: #980212;
+  --app-gold: #b18413;
+  --app-bg: #f9f9f9;
+}
+
+.app-pp-page {
+  background: var(--app-bg);
+}
+
+/* ── HERO ── */
+.app-pp-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--app-navy-deep) 0%, var(--app-navy) 55%, #000073 100%);
+  color: #fff;
+  padding: 90px 20px 110px;
+  text-align: center;
+}
+.app-pp-hero::before,
+.app-pp-hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.app-pp-hero::before {
+  width: 420px;
+  height: 420px;
+  top: -180px;
+  right: -120px;
+  background: radial-gradient(circle, rgba(177, 132, 19, 0.28), transparent 70%);
+}
+.app-pp-hero::after {
+  width: 360px;
+  height: 360px;
+  bottom: -200px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(165, 28, 48, 0.35), transparent 70%);
+}
+.app-pp-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 8px 22px;
+  margin-bottom: 24px;
+}
+.app-pp-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.app-pp-hero h1 span {
+  color: var(--app-gold);
+}
+.app-pp-hero p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.15rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+/* curved bottom edge */
+.app-pp-hero-curve {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+.app-pp-hero-curve svg {
+  width: 100%;
+  height: 70px;
+  display: block;
+}
+
+/* ── EFFECTIVE DATE CHIP ── */
+.app-pp-date {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #c5cae9;
+  box-shadow: 0 8px 24px rgba(0, 0, 128, 0.08);
+  border-radius: 30px;
+  padding: 10px 26px;
+  color: var(--app-navy);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: -26px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── INTRO ── */
+.app-pp-intro {
+  background: #fff;
+  border: 1px solid #c5cae9;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 128, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+.app-pp-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--app-crimson), var(--app-gold), var(--app-navy));
+}
+
+/* ── TIMELINE ── */
+.app-pp-timeline {
+  position: relative;
+  padding-left: 56px;
+}
+.app-pp-timeline::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--app-navy), var(--app-crimson), var(--app-gold));
+  opacity: 0.35;
+}
+.app-pp-step {
+  position: relative;
+  margin-bottom: 28px;
+}
+.app-pp-step-num {
+  position: absolute;
+  left: -56px;
+  top: 6px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--app-navy);
+  color: var(--app-navy);
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 128, 0.12);
+  z-index: 1;
+}
+.app-pp-step:nth-child(even) .app-pp-step-num {
+  border-color: var(--app-crimson);
+  color: var(--app-crimson);
+}
+.app-pp-step-card {
+  background: #fff;
+  border: 1px solid #e8eaf6;
+  border-radius: 14px;
+  padding: 26px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 128, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.app-pp-step-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 128, 0.1);
+}
+.app-pp-step-title {
+  color: var(--app-navy);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.app-pp-step-card p,
+.app-pp-step-card li {
+  color: #4a4e69;
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+/* bullet list */
+.app-pp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.app-pp-list li {
+  padding: 4px 0 4px 24px;
+  position: relative;
+}
+.app-pp-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  background: var(--app-gold);
+}
+
+/* highlight strip */
+.app-pp-note {
+  background: linear-gradient(90deg, #e8eaf6, #fff0f2);
+  border-left: 4px solid var(--app-crimson);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  color: var(--app-navy);
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+/* ── CONTACT ── */
+.app-pp-contact {
+  background: linear-gradient(135deg, var(--app-navy-deep), var(--app-navy));
+  border-radius: 18px;
+  color: #fff;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.app-pp-contact::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  right: -80px;
+  top: -80px;
+  background: radial-gradient(circle, rgba(177, 132, 19, 0.3), transparent 70%);
+}
+.app-pp-contact h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.app-pp-contact p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.app-pp-contact-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+.app-pp-contact-item .label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--app-gold);
+  margin-bottom: 2px;
+}
+
+/* ── AGREEMENT ── */
+.app-pp-agreement {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  padding: 22px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--app-crimson), var(--app-crimson-dark));
+}
+
+@media (max-width: 576px) {
+  .app-pp-timeline {
+    padding-left: 44px;
+  }
+  .app-pp-timeline::before {
+    left: 15px;
+  }
+  .app-pp-step-num {
+    left: -44px;
+    width: 34px;
+    height: 34px;
+    font-size: 0.8rem;
+  }
+  .app-pp-step-card {
+    padding: 20px;
+  }
+}

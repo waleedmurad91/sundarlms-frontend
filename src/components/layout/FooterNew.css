@@ -1,0 +1,401 @@
+/* ── Footer Wrapper ── */
+.footer {
+  background-color: #7c041d;
+  padding-top: 0;
+}
+
+/* ── Main Bar ── */
+.footer-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 32px;
+  position: relative;
+}
+.footerPortal {
+  padding: 0px 30px;
+}
+
+/* ── Brand: Logo + Copyright ── */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 28px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-copy {
+  color: #ffffff;
+}
+
+/* ── Links ── */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.footer-divider {
+  color: #ffffff;
+  font-size: 0.82rem;
+}
+
+/* ── Social Icons ── */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social-icon {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.footer-social-icon:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* ── Contact Info (icon-only, with popup) — desktop default ── */
+.footer-contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-contact-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  transition: margin-right 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Email icon is the leftmost item — its floating text extends further
+   left into empty space, so it doesn't need to push the phone icon */
+.footer-contact-email:hover {
+  margin-right: 0;
+}
+
+/* Phone icon sits to the right of the email icon. Its number floats
+   left and would land on top of the email icon, so push the phone
+   icon itself further right — this widens the gap between the two
+   icons and gives the floating number room to breathe */
+/* .footer-contact-phone:hover {
+  margin-right: 140px;
+} */
+ .footer-contact-wrapper:has(+ .footer-contact-phone:hover) {
+  margin-right: 140px;
+}
+
+.footer-contact-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.footer-contact-item:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.footer-contact-item i {
+  font-size: 0.95rem;
+}
+
+/* Icon-only button (popup trigger) — used on desktop (≥769px) */
+.footer-contact-icon-btn {
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.footer-contact-icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+ .footer-contact-popup {
+  position: absolute;
+  top: 50%;
+  right: 100%;   
+  left: auto;
+  bottom: auto;
+  transform-origin: right center;
+  transform: translateY(-50%) translateX(8px);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0 8px 0 0;  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Show popup on hover of the wrapper (icon + popup container) */
+.footer-contact-wrapper:hover .footer-contact-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(-50%) translateX(0);
+}
+
+.footer-contact-popup-text {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.footer-contact-popup-copy {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.footer-contact-popup-copy:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes footer-popup-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ════════════════════════════════════════
+   DEFAULT (≥769px / Desktop) — single row:
+   socials left | logo+copyright center | icon-only contact (hover popup) right
+   This matches Image 2.
+════════════════════════════════════════ */
+
+/* Text+icon contact links (mailto/tel, no popup) — hidden on desktop */
+.footer-contact-desktop {
+  display: none !important;
+}
+
+/* Icon-only popup wrapper (footer-contact-info2) — visible on desktop */
+.footer-contact-info2 {
+  display: flex;
+  gap: 10px;
+}
+
+/* Center logo+copyright in the exact middle of the bar, regardless of
+   how wide the left (socials) or right (contact) blocks are */
+.footer-brand {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ════════════════════════════════════════
+   ≤768px (Tablets & Mobile) — stacked column:
+   logo+copyright | text+icon contact (mailto/tel) | socials
+   This matches Image 1.
+════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Show text+icon links, hide icon-only popup version */
+  .footer-contact-desktop {
+    display: flex !important;
+  }
+
+  .footer-contact-info2 {
+    display: none !important;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0px;
+    gap: 16px;
+  }
+
+  /* 1st: Logo + Copyright */
+  .footer-brand {
+    position: static;
+    transform: none;
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* 2nd: Contact Info (email + phone, text + icon) */
+  .footer-contact-info {
+    order: 2;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  /* 3rd: Social Icons */
+  .footer-socials {
+    order: 3;
+    justify-content: center;
+  }
+}
+
+/* ── Large tablets (≤ 1024px) — desktop-style row, just tighter spacing ── */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .footer-bar {
+    padding: 14px 0px;
+    gap: 14px;
+  }
+
+  .footer-contact-info {
+    margin-left: 2rem;
+    gap: 10px;
+  }
+}
+
+/* ── Small phones (≤ 480px) ── */
+@media (max-width: 480px) {
+  .footer-bar {
+    padding: 14px 0px;
+    gap: 14px;
+  }
+
+  .footer-brand {
+    order: 1;
+  }
+
+  .footer-contact-info {
+    order: 2;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-socials {
+    order: 3;
+  }
+
+  .footer-contact-icon-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-links {
+    gap: 4px;
+  }
+
+  .footer-link {
+    font-size: 0.82rem;
+  }
+
+  .footer-copy {
+    font-size: 0.82rem;
+  }
+
+  .footer-social-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ── Very small phones (≤ 360px) ── */
+@media (max-width: 360px) {
+  .footer-brand {
+    order: 1;
+  }
+
+  .footer-contact-info {
+    order: 2;
+    gap: 6px;
+  }
+
+  .footer-socials {
+    order: 3;
+  }
+
+  .footer-divider {
+    display: none;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+}

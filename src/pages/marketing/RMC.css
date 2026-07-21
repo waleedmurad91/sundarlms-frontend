@@ -1,0 +1,75 @@
+/* Hero with News Layout */
+.hero-with-news-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+.rmc-hero {
+  background-image: url('../../assets/RMC-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-content-main {
+  flex: 1;
+}
+.rmcButton:hover {
+  background-color: #2626d8;
+}
+
+.no-news .news-sidebar{
+  display: none;
+}
+
+.rmc-register-card{
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+}
+.rmc-register-card h2{
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  color: #000080;
+  margin-bottom: 15px;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-with-news-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* Wrapper for auto scroll */
+.outstanding-scroll-wrapper {
+  max-height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Scroll container */
+.outstanding-scroll-container {
+  display: flex;
+  flex-direction: column;
+  animation: scrollOutstanding 100s linear infinite;
+}
+
+/* Keyframes for vertical scroll */
+@keyframes scrollOutstanding {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Hover: stop scroll */
+.outstanding-scroll-wrapper:hover .outstanding-scroll-container {
+  animation-play-state: paused;
+  cursor: grab;
+}

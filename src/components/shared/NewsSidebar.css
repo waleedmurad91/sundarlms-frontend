@@ -1,0 +1,220 @@
+/* NEWS SIDEBAR */
+.news-sidebar {
+  background: #ffffff;
+  /* border: 2px solid #E2E8F0; */
+  border-radius: 0;
+  padding: 1.5rem;
+  height: fit-content;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-sidebar-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #0F172A;
+  margin: 0 0 1rem 0;
+  font-family: Arial, sans-serif;
+  letter-spacing: -0.01em;
+  text-align: left;
+  /* border-bottom: 2px solid #E2E8F0; */
+  padding-bottom: 0.75rem;
+}
+
+.news-box-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.news-box-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-box-sidebar::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+.news-box-sidebar::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 0;
+}
+
+.news-box-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.news-item-sidebar {
+  /* background: #ffffff; */
+  /* border: 1px solid #E2E8F0; */
+  /* border-left: 4px solid #A51C30; */
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.news-item-sidebar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.news-type-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: #A51C30;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  font-family: Arial, sans-serif;
+}
+
+.news-item-sidebar .news-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 0.5rem 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.news-item-sidebar .news-description {
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+.news-item-sidebar .news-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+
+
+/* Wrapper for auto scroll */
+.news-box-sidebar-auto {
+   overflow-y: auto;
+   max-height: 700px;
+   position: relative;
+}
+
+.news-box-sidebar-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-box-sidebar-auto::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+.news-box-sidebar-auto::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 0;
+}
+
+.news-box-sidebar-auto::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Scroll container */
+.news-scroll-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   ADD THESE TO YOUR EXISTING NewsSidebar.css
+   (Append at the end of the file — does not
+   touch your existing classes/styles)
+   ============================================ */
+
+/* --- 5-line description clamp --- */
+.news-description-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- Read More link --- */
+.news-read-more {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #9b1c1c;
+  text-decoration: none;
+  justify-content: start;
+}
+
+.news-read-more:hover {
+  text-decoration: underline;
+}
+
+/* --- Image slider (auto-sliding, no arrows) --- */
+.news-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  background-color: #e5e7eb;
+}
+
+.news-slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.news-slider-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.news-slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-slider-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.news-slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.news-slider-dot.active {
+  background-color: #ffffff;
+  width: 16px;
+  border-radius: 4px;
+}

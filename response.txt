@@ -1,0 +1,2932 @@
+{
+    "success": true,
+    "data": [
+        {
+            "section": "Dashboard",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Dashboard",
+                    "slug": "dashboard",
+                    "label": "Dashboard",
+                    "path": "\/admin\/dashboard",
+                    "description": "Dashboard counters and summary widgets.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Dashboard",
+                    "nav_path": "\/admin\/dashboard",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 1,
+                            "module_id": 1,
+                            "name": "dashboard.read",
+                            "slug": "dashboard.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Dashboard module permission for read action.",
+                            "module": {
+                                "id": 1,
+                                "name": "Dashboard",
+                                "slug": "dashboard",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 13,
+                    "name": "Roles",
+                    "slug": "roles",
+                    "label": "Role Management",
+                    "path": "\/admin\/role-lists",
+                    "description": "Role and permission management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Roles",
+                    "nav_path": "\/admin\/roles",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 49,
+                            "module_id": 13,
+                            "name": "roles.read",
+                            "slug": "roles.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Roles module permission for read action.",
+                            "module": {
+                                "id": 13,
+                                "name": "Roles",
+                                "slug": "roles",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 50,
+                            "module_id": 13,
+                            "name": "roles.add",
+                            "slug": "roles.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Roles module permission for add action.",
+                            "module": {
+                                "id": 13,
+                                "name": "Roles",
+                                "slug": "roles",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 51,
+                            "module_id": 13,
+                            "name": "roles.edit",
+                            "slug": "roles.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Roles module permission for edit action.",
+                            "module": {
+                                "id": 13,
+                                "name": "Roles",
+                                "slug": "roles",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 52,
+                            "module_id": 13,
+                            "name": "roles.delete",
+                            "slug": "roles.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Roles module permission for delete action.",
+                            "module": {
+                                "id": 13,
+                                "name": "Roles",
+                                "slug": "roles",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 53,
+                            "module_id": 13,
+                            "name": "roles.all",
+                            "slug": "roles.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Roles module permission for all action.",
+                            "module": {
+                                "id": 13,
+                                "name": "Roles",
+                                "slug": "roles",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 4,
+                    "name": "Users",
+                    "slug": "users",
+                    "label": "User Management",
+                    "path": "\/admin\/user-lists",
+                    "description": "Team account management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Users",
+                    "nav_path": "\/admin\/users",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 4,
+                            "module_id": 4,
+                            "name": "users.read",
+                            "slug": "users.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Users module permission for read action.",
+                            "module": {
+                                "id": 4,
+                                "name": "Users",
+                                "slug": "users",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 5,
+                            "module_id": 4,
+                            "name": "users.add",
+                            "slug": "users.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Users module permission for add action.",
+                            "module": {
+                                "id": 4,
+                                "name": "Users",
+                                "slug": "users",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 6,
+                            "module_id": 4,
+                            "name": "users.edit",
+                            "slug": "users.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Users module permission for edit action.",
+                            "module": {
+                                "id": 4,
+                                "name": "Users",
+                                "slug": "users",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 7,
+                            "module_id": 4,
+                            "name": "users.delete",
+                            "slug": "users.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Users module permission for delete action.",
+                            "module": {
+                                "id": 4,
+                                "name": "Users",
+                                "slug": "users",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 8,
+                            "module_id": 4,
+                            "name": "users.all",
+                            "slug": "users.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Users module permission for all action.",
+                            "module": {
+                                "id": 4,
+                                "name": "Users",
+                                "slug": "users",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 5,
+                    "name": "Schools",
+                    "slug": "schools",
+                    "label": "School Management",
+                    "path": "\/admin\/school-lists",
+                    "description": "School management and directory.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Schools",
+                    "nav_path": "\/admin\/schools",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 9,
+                            "module_id": 5,
+                            "name": "schools.read",
+                            "slug": "schools.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Schools module permission for read action.",
+                            "module": {
+                                "id": 5,
+                                "name": "Schools",
+                                "slug": "schools",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 10,
+                            "module_id": 5,
+                            "name": "schools.add",
+                            "slug": "schools.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Schools module permission for add action.",
+                            "module": {
+                                "id": 5,
+                                "name": "Schools",
+                                "slug": "schools",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 11,
+                            "module_id": 5,
+                            "name": "schools.edit",
+                            "slug": "schools.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Schools module permission for edit action.",
+                            "module": {
+                                "id": 5,
+                                "name": "Schools",
+                                "slug": "schools",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 12,
+                            "module_id": 5,
+                            "name": "schools.delete",
+                            "slug": "schools.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Schools module permission for delete action.",
+                            "module": {
+                                "id": 5,
+                                "name": "Schools",
+                                "slug": "schools",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 13,
+                            "module_id": 5,
+                            "name": "schools.all",
+                            "slug": "schools.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Schools module permission for all action.",
+                            "module": {
+                                "id": 5,
+                                "name": "Schools",
+                                "slug": "schools",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 6,
+                    "name": "Teachers",
+                    "slug": "teachers",
+                    "label": "Teacher Management",
+                    "path": "\/admin\/teacher-lists",
+                    "description": "Teacher records and management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Teachers",
+                    "nav_path": "\/admin\/teachers",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 14,
+                            "module_id": 6,
+                            "name": "teachers.read",
+                            "slug": "teachers.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Teachers module permission for read action.",
+                            "module": {
+                                "id": 6,
+                                "name": "Teachers",
+                                "slug": "teachers",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 15,
+                            "module_id": 6,
+                            "name": "teachers.add",
+                            "slug": "teachers.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Teachers module permission for add action.",
+                            "module": {
+                                "id": 6,
+                                "name": "Teachers",
+                                "slug": "teachers",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 16,
+                            "module_id": 6,
+                            "name": "teachers.edit",
+                            "slug": "teachers.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Teachers module permission for edit action.",
+                            "module": {
+                                "id": 6,
+                                "name": "Teachers",
+                                "slug": "teachers",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 17,
+                            "module_id": 6,
+                            "name": "teachers.delete",
+                            "slug": "teachers.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Teachers module permission for delete action.",
+                            "module": {
+                                "id": 6,
+                                "name": "Teachers",
+                                "slug": "teachers",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 18,
+                            "module_id": 6,
+                            "name": "teachers.all",
+                            "slug": "teachers.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Teachers module permission for all action.",
+                            "module": {
+                                "id": 6,
+                                "name": "Teachers",
+                                "slug": "teachers",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 7,
+                    "name": "Students",
+                    "slug": "students",
+                    "label": "Student Management",
+                    "path": "\/admin\/centralized-student-lists",
+                    "description": "Student records and management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Students",
+                    "nav_path": "\/admin\/students",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 19,
+                            "module_id": 7,
+                            "name": "students.read",
+                            "slug": "students.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Students module permission for read action.",
+                            "module": {
+                                "id": 7,
+                                "name": "Students",
+                                "slug": "students",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 20,
+                            "module_id": 7,
+                            "name": "students.add",
+                            "slug": "students.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Students module permission for add action.",
+                            "module": {
+                                "id": 7,
+                                "name": "Students",
+                                "slug": "students",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 21,
+                            "module_id": 7,
+                            "name": "students.edit",
+                            "slug": "students.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Students module permission for edit action.",
+                            "module": {
+                                "id": 7,
+                                "name": "Students",
+                                "slug": "students",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 22,
+                            "module_id": 7,
+                            "name": "students.delete",
+                            "slug": "students.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Students module permission for delete action.",
+                            "module": {
+                                "id": 7,
+                                "name": "Students",
+                                "slug": "students",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 23,
+                            "module_id": 7,
+                            "name": "students.all",
+                            "slug": "students.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Students module permission for all action.",
+                            "module": {
+                                "id": 7,
+                                "name": "Students",
+                                "slug": "students",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 8,
+                    "name": "Classes",
+                    "slug": "classes",
+                    "label": "Class Management",
+                    "path": "\/admin\/class-lists",
+                    "description": "Class and grade management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Classes",
+                    "nav_path": "\/admin\/classes",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 24,
+                            "module_id": 8,
+                            "name": "classes.read",
+                            "slug": "classes.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Classes module permission for read action.",
+                            "module": {
+                                "id": 8,
+                                "name": "Classes",
+                                "slug": "classes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 25,
+                            "module_id": 8,
+                            "name": "classes.add",
+                            "slug": "classes.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Classes module permission for add action.",
+                            "module": {
+                                "id": 8,
+                                "name": "Classes",
+                                "slug": "classes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 26,
+                            "module_id": 8,
+                            "name": "classes.edit",
+                            "slug": "classes.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Classes module permission for edit action.",
+                            "module": {
+                                "id": 8,
+                                "name": "Classes",
+                                "slug": "classes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 27,
+                            "module_id": 8,
+                            "name": "classes.delete",
+                            "slug": "classes.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Classes module permission for delete action.",
+                            "module": {
+                                "id": 8,
+                                "name": "Classes",
+                                "slug": "classes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 28,
+                            "module_id": 8,
+                            "name": "classes.all",
+                            "slug": "classes.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Classes module permission for all action.",
+                            "module": {
+                                "id": 8,
+                                "name": "Classes",
+                                "slug": "classes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 9,
+                    "name": "Subjects",
+                    "slug": "subjects",
+                    "label": "Subject Management",
+                    "path": "\/admin\/subject-lists",
+                    "description": "Subject management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Subjects",
+                    "nav_path": "\/admin\/subjects",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 29,
+                            "module_id": 9,
+                            "name": "subjects.read",
+                            "slug": "subjects.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Subjects module permission for read action.",
+                            "module": {
+                                "id": 9,
+                                "name": "Subjects",
+                                "slug": "subjects",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 30,
+                            "module_id": 9,
+                            "name": "subjects.add",
+                            "slug": "subjects.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Subjects module permission for add action.",
+                            "module": {
+                                "id": 9,
+                                "name": "Subjects",
+                                "slug": "subjects",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 31,
+                            "module_id": 9,
+                            "name": "subjects.edit",
+                            "slug": "subjects.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Subjects module permission for edit action.",
+                            "module": {
+                                "id": 9,
+                                "name": "Subjects",
+                                "slug": "subjects",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 32,
+                            "module_id": 9,
+                            "name": "subjects.delete",
+                            "slug": "subjects.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Subjects module permission for delete action.",
+                            "module": {
+                                "id": 9,
+                                "name": "Subjects",
+                                "slug": "subjects",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 33,
+                            "module_id": 9,
+                            "name": "subjects.all",
+                            "slug": "subjects.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Subjects module permission for all action.",
+                            "module": {
+                                "id": 9,
+                                "name": "Subjects",
+                                "slug": "subjects",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 10,
+                    "name": "Staff",
+                    "slug": "staff",
+                    "label": "Staff Management",
+                    "path": "\/admin\/staff-lists",
+                    "description": "Staff records and management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Staff",
+                    "nav_path": "\/admin\/staff",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 34,
+                            "module_id": 10,
+                            "name": "staff.read",
+                            "slug": "staff.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Staff module permission for read action.",
+                            "module": {
+                                "id": 10,
+                                "name": "Staff",
+                                "slug": "staff",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 35,
+                            "module_id": 10,
+                            "name": "staff.add",
+                            "slug": "staff.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Staff module permission for add action.",
+                            "module": {
+                                "id": 10,
+                                "name": "Staff",
+                                "slug": "staff",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 36,
+                            "module_id": 10,
+                            "name": "staff.edit",
+                            "slug": "staff.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Staff module permission for edit action.",
+                            "module": {
+                                "id": 10,
+                                "name": "Staff",
+                                "slug": "staff",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 37,
+                            "module_id": 10,
+                            "name": "staff.delete",
+                            "slug": "staff.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Staff module permission for delete action.",
+                            "module": {
+                                "id": 10,
+                                "name": "Staff",
+                                "slug": "staff",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 38,
+                            "module_id": 10,
+                            "name": "staff.all",
+                            "slug": "staff.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Staff module permission for all action.",
+                            "module": {
+                                "id": 10,
+                                "name": "Staff",
+                                "slug": "staff",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 11,
+                    "name": "Certificates",
+                    "slug": "certificates",
+                    "label": "Certificate Management",
+                    "path": "\/admin\/certificate-lists",
+                    "description": "Certificate generation and management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Certificates",
+                    "nav_path": "\/admin\/certificates",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 39,
+                            "module_id": 11,
+                            "name": "certificates.read",
+                            "slug": "certificates.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Certificates module permission for read action.",
+                            "module": {
+                                "id": 11,
+                                "name": "Certificates",
+                                "slug": "certificates",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 40,
+                            "module_id": 11,
+                            "name": "certificates.add",
+                            "slug": "certificates.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Certificates module permission for add action.",
+                            "module": {
+                                "id": 11,
+                                "name": "Certificates",
+                                "slug": "certificates",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 41,
+                            "module_id": 11,
+                            "name": "certificates.edit",
+                            "slug": "certificates.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Certificates module permission for edit action.",
+                            "module": {
+                                "id": 11,
+                                "name": "Certificates",
+                                "slug": "certificates",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 42,
+                            "module_id": 11,
+                            "name": "certificates.delete",
+                            "slug": "certificates.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Certificates module permission for delete action.",
+                            "module": {
+                                "id": 11,
+                                "name": "Certificates",
+                                "slug": "certificates",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 43,
+                            "module_id": 11,
+                            "name": "certificates.all",
+                            "slug": "certificates.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Certificates module permission for all action.",
+                            "module": {
+                                "id": 11,
+                                "name": "Certificates",
+                                "slug": "certificates",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 12,
+                    "name": "Locations",
+                    "slug": "locations",
+                    "label": "Location Management",
+                    "path": "\/admin\/locations",
+                    "description": "Province, district, tehsil, city, and cluster area management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": true,
+                    "is_child": false,
+                    "nav_label": "Location Management",
+                    "nav_path": "\/admin\/locations",
+                    "nav_section": "Dashboard",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 44,
+                            "module_id": 12,
+                            "name": "locations.read",
+                            "slug": "locations.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Locations module permission for read action.",
+                            "module": {
+                                "id": 12,
+                                "name": "Locations",
+                                "slug": "locations",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 45,
+                            "module_id": 12,
+                            "name": "locations.add",
+                            "slug": "locations.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Locations module permission for add action.",
+                            "module": {
+                                "id": 12,
+                                "name": "Locations",
+                                "slug": "locations",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 46,
+                            "module_id": 12,
+                            "name": "locations.edit",
+                            "slug": "locations.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Locations module permission for edit action.",
+                            "module": {
+                                "id": 12,
+                                "name": "Locations",
+                                "slug": "locations",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 47,
+                            "module_id": 12,
+                            "name": "locations.delete",
+                            "slug": "locations.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Locations module permission for delete action.",
+                            "module": {
+                                "id": 12,
+                                "name": "Locations",
+                                "slug": "locations",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 48,
+                            "module_id": 12,
+                            "name": "locations.all",
+                            "slug": "locations.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Locations module permission for all action.",
+                            "module": {
+                                "id": 12,
+                                "name": "Locations",
+                                "slug": "locations",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": [
+                        {
+                            "id": 39,
+                            "name": "Provinces",
+                            "slug": "provinces",
+                            "label": "Province",
+                            "path": "\/admin\/province-lists",
+                            "description": "Province management under locations.",
+                            "parent_id": 12,
+                            "parent": null,
+                            "has_dropdown": false,
+                            "is_child": true,
+                            "nav_label": "Province",
+                            "nav_path": "\/admin\/province-lists",
+                            "nav_section": "Dashboard",
+                            "nav_order": 1,
+                            "show_in_navigation": false,
+                            "permissions": [
+                                {
+                                    "id": 162,
+                                    "module_id": 39,
+                                    "name": "provinces.read",
+                                    "slug": "provinces.read",
+                                    "guard_name": "web",
+                                    "action": "read",
+                                    "description": "Provinces module permission for read action.",
+                                    "module": {
+                                        "id": 39,
+                                        "name": "Provinces",
+                                        "slug": "provinces",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 163,
+                                    "module_id": 39,
+                                    "name": "provinces.add",
+                                    "slug": "provinces.add",
+                                    "guard_name": "web",
+                                    "action": "add",
+                                    "description": "Provinces module permission for add action.",
+                                    "module": {
+                                        "id": 39,
+                                        "name": "Provinces",
+                                        "slug": "provinces",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 164,
+                                    "module_id": 39,
+                                    "name": "provinces.edit",
+                                    "slug": "provinces.edit",
+                                    "guard_name": "web",
+                                    "action": "edit",
+                                    "description": "Provinces module permission for edit action.",
+                                    "module": {
+                                        "id": 39,
+                                        "name": "Provinces",
+                                        "slug": "provinces",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 165,
+                                    "module_id": 39,
+                                    "name": "provinces.delete",
+                                    "slug": "provinces.delete",
+                                    "guard_name": "web",
+                                    "action": "delete",
+                                    "description": "Provinces module permission for delete action.",
+                                    "module": {
+                                        "id": 39,
+                                        "name": "Provinces",
+                                        "slug": "provinces",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 166,
+                                    "module_id": 39,
+                                    "name": "provinces.all",
+                                    "slug": "provinces.all",
+                                    "guard_name": "web",
+                                    "action": "all",
+                                    "description": "Provinces module permission for all action.",
+                                    "module": {
+                                        "id": 39,
+                                        "name": "Provinces",
+                                        "slug": "provinces",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                }
+                            ],
+                            "children": []
+                        },
+                        {
+                            "id": 40,
+                            "name": "Districts",
+                            "slug": "districts",
+                            "label": "District",
+                            "path": "\/admin\/district-lists",
+                            "description": "District management under locations.",
+                            "parent_id": 12,
+                            "parent": null,
+                            "has_dropdown": false,
+                            "is_child": true,
+                            "nav_label": "District",
+                            "nav_path": "\/admin\/district-lists",
+                            "nav_section": "Dashboard",
+                            "nav_order": 2,
+                            "show_in_navigation": false,
+                            "permissions": [
+                                {
+                                    "id": 167,
+                                    "module_id": 40,
+                                    "name": "districts.read",
+                                    "slug": "districts.read",
+                                    "guard_name": "web",
+                                    "action": "read",
+                                    "description": "Districts module permission for read action.",
+                                    "module": {
+                                        "id": 40,
+                                        "name": "Districts",
+                                        "slug": "districts",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 168,
+                                    "module_id": 40,
+                                    "name": "districts.add",
+                                    "slug": "districts.add",
+                                    "guard_name": "web",
+                                    "action": "add",
+                                    "description": "Districts module permission for add action.",
+                                    "module": {
+                                        "id": 40,
+                                        "name": "Districts",
+                                        "slug": "districts",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 169,
+                                    "module_id": 40,
+                                    "name": "districts.edit",
+                                    "slug": "districts.edit",
+                                    "guard_name": "web",
+                                    "action": "edit",
+                                    "description": "Districts module permission for edit action.",
+                                    "module": {
+                                        "id": 40,
+                                        "name": "Districts",
+                                        "slug": "districts",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 170,
+                                    "module_id": 40,
+                                    "name": "districts.delete",
+                                    "slug": "districts.delete",
+                                    "guard_name": "web",
+                                    "action": "delete",
+                                    "description": "Districts module permission for delete action.",
+                                    "module": {
+                                        "id": 40,
+                                        "name": "Districts",
+                                        "slug": "districts",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 171,
+                                    "module_id": 40,
+                                    "name": "districts.all",
+                                    "slug": "districts.all",
+                                    "guard_name": "web",
+                                    "action": "all",
+                                    "description": "Districts module permission for all action.",
+                                    "module": {
+                                        "id": 40,
+                                        "name": "Districts",
+                                        "slug": "districts",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                }
+                            ],
+                            "children": []
+                        },
+                        {
+                            "id": 41,
+                            "name": "Tehsils",
+                            "slug": "tehsils",
+                            "label": "Tehsil",
+                            "path": "\/admin\/tehsil-lists",
+                            "description": "Tehsil management under locations.",
+                            "parent_id": 12,
+                            "parent": null,
+                            "has_dropdown": false,
+                            "is_child": true,
+                            "nav_label": "Tehsil",
+                            "nav_path": "\/admin\/tehsil-lists",
+                            "nav_section": "Dashboard",
+                            "nav_order": 3,
+                            "show_in_navigation": false,
+                            "permissions": [
+                                {
+                                    "id": 172,
+                                    "module_id": 41,
+                                    "name": "tehsils.read",
+                                    "slug": "tehsils.read",
+                                    "guard_name": "web",
+                                    "action": "read",
+                                    "description": "Tehsils module permission for read action.",
+                                    "module": {
+                                        "id": 41,
+                                        "name": "Tehsils",
+                                        "slug": "tehsils",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 173,
+                                    "module_id": 41,
+                                    "name": "tehsils.add",
+                                    "slug": "tehsils.add",
+                                    "guard_name": "web",
+                                    "action": "add",
+                                    "description": "Tehsils module permission for add action.",
+                                    "module": {
+                                        "id": 41,
+                                        "name": "Tehsils",
+                                        "slug": "tehsils",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 174,
+                                    "module_id": 41,
+                                    "name": "tehsils.edit",
+                                    "slug": "tehsils.edit",
+                                    "guard_name": "web",
+                                    "action": "edit",
+                                    "description": "Tehsils module permission for edit action.",
+                                    "module": {
+                                        "id": 41,
+                                        "name": "Tehsils",
+                                        "slug": "tehsils",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 175,
+                                    "module_id": 41,
+                                    "name": "tehsils.delete",
+                                    "slug": "tehsils.delete",
+                                    "guard_name": "web",
+                                    "action": "delete",
+                                    "description": "Tehsils module permission for delete action.",
+                                    "module": {
+                                        "id": 41,
+                                        "name": "Tehsils",
+                                        "slug": "tehsils",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 176,
+                                    "module_id": 41,
+                                    "name": "tehsils.all",
+                                    "slug": "tehsils.all",
+                                    "guard_name": "web",
+                                    "action": "all",
+                                    "description": "Tehsils module permission for all action.",
+                                    "module": {
+                                        "id": 41,
+                                        "name": "Tehsils",
+                                        "slug": "tehsils",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                }
+                            ],
+                            "children": []
+                        },
+                        {
+                            "id": 42,
+                            "name": "Cities",
+                            "slug": "cities",
+                            "label": "City",
+                            "path": "\/admin\/city-lists",
+                            "description": "City management under locations.",
+                            "parent_id": 12,
+                            "parent": null,
+                            "has_dropdown": false,
+                            "is_child": true,
+                            "nav_label": "City",
+                            "nav_path": "\/admin\/city-lists",
+                            "nav_section": "Dashboard",
+                            "nav_order": 4,
+                            "show_in_navigation": false,
+                            "permissions": [
+                                {
+                                    "id": 177,
+                                    "module_id": 42,
+                                    "name": "cities.read",
+                                    "slug": "cities.read",
+                                    "guard_name": "web",
+                                    "action": "read",
+                                    "description": "Cities module permission for read action.",
+                                    "module": {
+                                        "id": 42,
+                                        "name": "Cities",
+                                        "slug": "cities",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 178,
+                                    "module_id": 42,
+                                    "name": "cities.add",
+                                    "slug": "cities.add",
+                                    "guard_name": "web",
+                                    "action": "add",
+                                    "description": "Cities module permission for add action.",
+                                    "module": {
+                                        "id": 42,
+                                        "name": "Cities",
+                                        "slug": "cities",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 179,
+                                    "module_id": 42,
+                                    "name": "cities.edit",
+                                    "slug": "cities.edit",
+                                    "guard_name": "web",
+                                    "action": "edit",
+                                    "description": "Cities module permission for edit action.",
+                                    "module": {
+                                        "id": 42,
+                                        "name": "Cities",
+                                        "slug": "cities",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 180,
+                                    "module_id": 42,
+                                    "name": "cities.delete",
+                                    "slug": "cities.delete",
+                                    "guard_name": "web",
+                                    "action": "delete",
+                                    "description": "Cities module permission for delete action.",
+                                    "module": {
+                                        "id": 42,
+                                        "name": "Cities",
+                                        "slug": "cities",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 181,
+                                    "module_id": 42,
+                                    "name": "cities.all",
+                                    "slug": "cities.all",
+                                    "guard_name": "web",
+                                    "action": "all",
+                                    "description": "Cities module permission for all action.",
+                                    "module": {
+                                        "id": 42,
+                                        "name": "Cities",
+                                        "slug": "cities",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                }
+                            ],
+                            "children": []
+                        },
+                        {
+                            "id": 43,
+                            "name": "Cluster Areas",
+                            "slug": "cluster_areas",
+                            "label": "Cluster Area",
+                            "path": "\/admin\/cluster-area-lists",
+                            "description": "Cluster area management under locations.",
+                            "parent_id": 12,
+                            "parent": null,
+                            "has_dropdown": false,
+                            "is_child": true,
+                            "nav_label": "Cluster Area",
+                            "nav_path": "\/admin\/cluster-area-lists",
+                            "nav_section": "Dashboard",
+                            "nav_order": 5,
+                            "show_in_navigation": false,
+                            "permissions": [
+                                {
+                                    "id": 182,
+                                    "module_id": 43,
+                                    "name": "cluster_areas.read",
+                                    "slug": "cluster_areas.read",
+                                    "guard_name": "web",
+                                    "action": "read",
+                                    "description": "Cluster Areas module permission for read action.",
+                                    "module": {
+                                        "id": 43,
+                                        "name": "Cluster Areas",
+                                        "slug": "cluster_areas",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 183,
+                                    "module_id": 43,
+                                    "name": "cluster_areas.add",
+                                    "slug": "cluster_areas.add",
+                                    "guard_name": "web",
+                                    "action": "add",
+                                    "description": "Cluster Areas module permission for add action.",
+                                    "module": {
+                                        "id": 43,
+                                        "name": "Cluster Areas",
+                                        "slug": "cluster_areas",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 184,
+                                    "module_id": 43,
+                                    "name": "cluster_areas.edit",
+                                    "slug": "cluster_areas.edit",
+                                    "guard_name": "web",
+                                    "action": "edit",
+                                    "description": "Cluster Areas module permission for edit action.",
+                                    "module": {
+                                        "id": 43,
+                                        "name": "Cluster Areas",
+                                        "slug": "cluster_areas",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 185,
+                                    "module_id": 43,
+                                    "name": "cluster_areas.delete",
+                                    "slug": "cluster_areas.delete",
+                                    "guard_name": "web",
+                                    "action": "delete",
+                                    "description": "Cluster Areas module permission for delete action.",
+                                    "module": {
+                                        "id": 43,
+                                        "name": "Cluster Areas",
+                                        "slug": "cluster_areas",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                },
+                                {
+                                    "id": 186,
+                                    "module_id": 43,
+                                    "name": "cluster_areas.all",
+                                    "slug": "cluster_areas.all",
+                                    "guard_name": "web",
+                                    "action": "all",
+                                    "description": "Cluster Areas module permission for all action.",
+                                    "module": {
+                                        "id": 43,
+                                        "name": "Cluster Areas",
+                                        "slug": "cluster_areas",
+                                        "parent_id": 12,
+                                        "parent": null
+                                    }
+                                }
+                            ],
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Questions",
+            "items": [
+                {
+                    "id": 16,
+                    "name": "Units",
+                    "slug": "units",
+                    "label": "Unit Management",
+                    "path": "\/admin\/unit-lists",
+                    "description": "Unit management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Units",
+                    "nav_path": "\/admin\/units",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 61,
+                            "module_id": 16,
+                            "name": "units.read",
+                            "slug": "units.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Units module permission for read action.",
+                            "module": {
+                                "id": 16,
+                                "name": "Units",
+                                "slug": "units",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 62,
+                            "module_id": 16,
+                            "name": "units.add",
+                            "slug": "units.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Units module permission for add action.",
+                            "module": {
+                                "id": 16,
+                                "name": "Units",
+                                "slug": "units",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 63,
+                            "module_id": 16,
+                            "name": "units.edit",
+                            "slug": "units.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Units module permission for edit action.",
+                            "module": {
+                                "id": 16,
+                                "name": "Units",
+                                "slug": "units",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 64,
+                            "module_id": 16,
+                            "name": "units.delete",
+                            "slug": "units.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Units module permission for delete action.",
+                            "module": {
+                                "id": 16,
+                                "name": "Units",
+                                "slug": "units",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 65,
+                            "module_id": 16,
+                            "name": "units.all",
+                            "slug": "units.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Units module permission for all action.",
+                            "module": {
+                                "id": 16,
+                                "name": "Units",
+                                "slug": "units",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 17,
+                    "name": "Topics",
+                    "slug": "topics",
+                    "label": "Topics Management",
+                    "path": "\/admin\/topic-lists",
+                    "description": "Topic management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Topics",
+                    "nav_path": "\/admin\/topics",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 66,
+                            "module_id": 17,
+                            "name": "topics.read",
+                            "slug": "topics.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Topics module permission for read action.",
+                            "module": {
+                                "id": 17,
+                                "name": "Topics",
+                                "slug": "topics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 67,
+                            "module_id": 17,
+                            "name": "topics.add",
+                            "slug": "topics.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Topics module permission for add action.",
+                            "module": {
+                                "id": 17,
+                                "name": "Topics",
+                                "slug": "topics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 68,
+                            "module_id": 17,
+                            "name": "topics.edit",
+                            "slug": "topics.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Topics module permission for edit action.",
+                            "module": {
+                                "id": 17,
+                                "name": "Topics",
+                                "slug": "topics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 69,
+                            "module_id": 17,
+                            "name": "topics.delete",
+                            "slug": "topics.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Topics module permission for delete action.",
+                            "module": {
+                                "id": 17,
+                                "name": "Topics",
+                                "slug": "topics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 70,
+                            "module_id": 17,
+                            "name": "topics.all",
+                            "slug": "topics.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Topics module permission for all action.",
+                            "module": {
+                                "id": 17,
+                                "name": "Topics",
+                                "slug": "topics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 15,
+                    "name": "Questions",
+                    "slug": "questions",
+                    "label": "Questions Management",
+                    "path": "\/admin\/question-lists",
+                    "description": "Question bank and review workflow.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Questions",
+                    "nav_path": "\/admin\/questions",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 56,
+                            "module_id": 15,
+                            "name": "questions.read",
+                            "slug": "questions.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Questions module permission for read action.",
+                            "module": {
+                                "id": 15,
+                                "name": "Questions",
+                                "slug": "questions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 57,
+                            "module_id": 15,
+                            "name": "questions.add",
+                            "slug": "questions.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Questions module permission for add action.",
+                            "module": {
+                                "id": 15,
+                                "name": "Questions",
+                                "slug": "questions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 58,
+                            "module_id": 15,
+                            "name": "questions.edit",
+                            "slug": "questions.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Questions module permission for edit action.",
+                            "module": {
+                                "id": 15,
+                                "name": "Questions",
+                                "slug": "questions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 59,
+                            "module_id": 15,
+                            "name": "questions.delete",
+                            "slug": "questions.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Questions module permission for delete action.",
+                            "module": {
+                                "id": 15,
+                                "name": "Questions",
+                                "slug": "questions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 60,
+                            "module_id": 15,
+                            "name": "questions.all",
+                            "slug": "questions.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Questions module permission for all action.",
+                            "module": {
+                                "id": 15,
+                                "name": "Questions",
+                                "slug": "questions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 18,
+                    "name": "Assessments",
+                    "slug": "assessments",
+                    "label": "Assessment Management",
+                    "path": "\/admin\/assessments",
+                    "description": "Assessment management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Assessments",
+                    "nav_path": "\/admin\/assessments",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 71,
+                            "module_id": 18,
+                            "name": "assessments.read",
+                            "slug": "assessments.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Assessments module permission for read action.",
+                            "module": {
+                                "id": 18,
+                                "name": "Assessments",
+                                "slug": "assessments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 72,
+                            "module_id": 18,
+                            "name": "assessments.add",
+                            "slug": "assessments.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Assessments module permission for add action.",
+                            "module": {
+                                "id": 18,
+                                "name": "Assessments",
+                                "slug": "assessments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 73,
+                            "module_id": 18,
+                            "name": "assessments.edit",
+                            "slug": "assessments.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Assessments module permission for edit action.",
+                            "module": {
+                                "id": 18,
+                                "name": "Assessments",
+                                "slug": "assessments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 74,
+                            "module_id": 18,
+                            "name": "assessments.delete",
+                            "slug": "assessments.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Assessments module permission for delete action.",
+                            "module": {
+                                "id": 18,
+                                "name": "Assessments",
+                                "slug": "assessments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 75,
+                            "module_id": 18,
+                            "name": "assessments.all",
+                            "slug": "assessments.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Assessments module permission for all action.",
+                            "module": {
+                                "id": 18,
+                                "name": "Assessments",
+                                "slug": "assessments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 19,
+                    "name": "Quizzes",
+                    "slug": "quizzes",
+                    "label": "Quiz Management",
+                    "path": "\/admin\/quiz-lists",
+                    "description": "Quiz management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Quizzes",
+                    "nav_path": "\/admin\/quizzes",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 76,
+                            "module_id": 19,
+                            "name": "quizzes.read",
+                            "slug": "quizzes.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Quizzes module permission for read action.",
+                            "module": {
+                                "id": 19,
+                                "name": "Quizzes",
+                                "slug": "quizzes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 77,
+                            "module_id": 19,
+                            "name": "quizzes.add",
+                            "slug": "quizzes.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Quizzes module permission for add action.",
+                            "module": {
+                                "id": 19,
+                                "name": "Quizzes",
+                                "slug": "quizzes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 78,
+                            "module_id": 19,
+                            "name": "quizzes.edit",
+                            "slug": "quizzes.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Quizzes module permission for edit action.",
+                            "module": {
+                                "id": 19,
+                                "name": "Quizzes",
+                                "slug": "quizzes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 79,
+                            "module_id": 19,
+                            "name": "quizzes.delete",
+                            "slug": "quizzes.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Quizzes module permission for delete action.",
+                            "module": {
+                                "id": 19,
+                                "name": "Quizzes",
+                                "slug": "quizzes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 80,
+                            "module_id": 19,
+                            "name": "quizzes.all",
+                            "slug": "quizzes.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Quizzes module permission for all action.",
+                            "module": {
+                                "id": 19,
+                                "name": "Quizzes",
+                                "slug": "quizzes",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 20,
+                    "name": "Unit Tests",
+                    "slug": "unit_tests",
+                    "label": "Unit Test Management",
+                    "path": "\/admin\/unit-test-lists",
+                    "description": "Unit test management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Unit Tests",
+                    "nav_path": "\/admin\/unit-tests",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 81,
+                            "module_id": 20,
+                            "name": "unit_tests.read",
+                            "slug": "unit_tests.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Unit Tests module permission for read action.",
+                            "module": {
+                                "id": 20,
+                                "name": "Unit Tests",
+                                "slug": "unit_tests",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 82,
+                            "module_id": 20,
+                            "name": "unit_tests.add",
+                            "slug": "unit_tests.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Unit Tests module permission for add action.",
+                            "module": {
+                                "id": 20,
+                                "name": "Unit Tests",
+                                "slug": "unit_tests",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 83,
+                            "module_id": 20,
+                            "name": "unit_tests.edit",
+                            "slug": "unit_tests.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Unit Tests module permission for edit action.",
+                            "module": {
+                                "id": 20,
+                                "name": "Unit Tests",
+                                "slug": "unit_tests",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 84,
+                            "module_id": 20,
+                            "name": "unit_tests.delete",
+                            "slug": "unit_tests.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Unit Tests module permission for delete action.",
+                            "module": {
+                                "id": 20,
+                                "name": "Unit Tests",
+                                "slug": "unit_tests",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 85,
+                            "module_id": 20,
+                            "name": "unit_tests.all",
+                            "slug": "unit_tests.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Unit Tests module permission for all action.",
+                            "module": {
+                                "id": 20,
+                                "name": "Unit Tests",
+                                "slug": "unit_tests",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "section": "Sessions",
+            "items": [
+                {
+                    "id": 21,
+                    "name": "PMC Sessions",
+                    "slug": "pmc_sessions",
+                    "label": "PMC Sessions",
+                    "path": "\/admin\/pmc-sessions-lists",
+                    "description": "PMC sessions and participants management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "PMC Sessions",
+                    "nav_path": "\/admin\/pmc-sessions",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 86,
+                            "module_id": 21,
+                            "name": "pmc_sessions.read",
+                            "slug": "pmc_sessions.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "PMC Sessions module permission for read action.",
+                            "module": {
+                                "id": 21,
+                                "name": "PMC Sessions",
+                                "slug": "pmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 87,
+                            "module_id": 21,
+                            "name": "pmc_sessions.add",
+                            "slug": "pmc_sessions.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "PMC Sessions module permission for add action.",
+                            "module": {
+                                "id": 21,
+                                "name": "PMC Sessions",
+                                "slug": "pmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 88,
+                            "module_id": 21,
+                            "name": "pmc_sessions.edit",
+                            "slug": "pmc_sessions.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "PMC Sessions module permission for edit action.",
+                            "module": {
+                                "id": 21,
+                                "name": "PMC Sessions",
+                                "slug": "pmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 89,
+                            "module_id": 21,
+                            "name": "pmc_sessions.delete",
+                            "slug": "pmc_sessions.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "PMC Sessions module permission for delete action.",
+                            "module": {
+                                "id": 21,
+                                "name": "PMC Sessions",
+                                "slug": "pmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 90,
+                            "module_id": 21,
+                            "name": "pmc_sessions.all",
+                            "slug": "pmc_sessions.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "PMC Sessions module permission for all action.",
+                            "module": {
+                                "id": 21,
+                                "name": "PMC Sessions",
+                                "slug": "pmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 22,
+                    "name": "RMC Sessions",
+                    "slug": "rmc_sessions",
+                    "label": "RMC Sessions",
+                    "path": "\/admin\/rmc-sessions-lists",
+                    "description": "RMC sessions and participants management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "RMC Sessions",
+                    "nav_path": "\/admin\/rmc-sessions",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 91,
+                            "module_id": 22,
+                            "name": "rmc_sessions.read",
+                            "slug": "rmc_sessions.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "RMC Sessions module permission for read action.",
+                            "module": {
+                                "id": 22,
+                                "name": "RMC Sessions",
+                                "slug": "rmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 92,
+                            "module_id": 22,
+                            "name": "rmc_sessions.add",
+                            "slug": "rmc_sessions.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "RMC Sessions module permission for add action.",
+                            "module": {
+                                "id": 22,
+                                "name": "RMC Sessions",
+                                "slug": "rmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 93,
+                            "module_id": 22,
+                            "name": "rmc_sessions.edit",
+                            "slug": "rmc_sessions.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "RMC Sessions module permission for edit action.",
+                            "module": {
+                                "id": 22,
+                                "name": "RMC Sessions",
+                                "slug": "rmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 94,
+                            "module_id": 22,
+                            "name": "rmc_sessions.delete",
+                            "slug": "rmc_sessions.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "RMC Sessions module permission for delete action.",
+                            "module": {
+                                "id": 22,
+                                "name": "RMC Sessions",
+                                "slug": "rmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 95,
+                            "module_id": 22,
+                            "name": "rmc_sessions.all",
+                            "slug": "rmc_sessions.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "RMC Sessions module permission for all action.",
+                            "module": {
+                                "id": 22,
+                                "name": "RMC Sessions",
+                                "slug": "rmc_sessions",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "section": "Website",
+            "items": [
+                {
+                    "id": 23,
+                    "name": "News",
+                    "slug": "news",
+                    "label": "News & Updates",
+                    "path": "\/admin\/news-story-lists",
+                    "description": "News and updates management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "News",
+                    "nav_path": "\/admin\/news",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 96,
+                            "module_id": 23,
+                            "name": "news.read",
+                            "slug": "news.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "News module permission for read action.",
+                            "module": {
+                                "id": 23,
+                                "name": "News",
+                                "slug": "news",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 97,
+                            "module_id": 23,
+                            "name": "news.add",
+                            "slug": "news.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "News module permission for add action.",
+                            "module": {
+                                "id": 23,
+                                "name": "News",
+                                "slug": "news",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 98,
+                            "module_id": 23,
+                            "name": "news.edit",
+                            "slug": "news.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "News module permission for edit action.",
+                            "module": {
+                                "id": 23,
+                                "name": "News",
+                                "slug": "news",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 99,
+                            "module_id": 23,
+                            "name": "news.delete",
+                            "slug": "news.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "News module permission for delete action.",
+                            "module": {
+                                "id": 23,
+                                "name": "News",
+                                "slug": "news",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 100,
+                            "module_id": 23,
+                            "name": "news.all",
+                            "slug": "news.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "News module permission for all action.",
+                            "module": {
+                                "id": 23,
+                                "name": "News",
+                                "slug": "news",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 24,
+                    "name": "Gallery",
+                    "slug": "gallery",
+                    "label": "Gallery",
+                    "path": "\/admin\/gallery-lists",
+                    "description": "Gallery and media management.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Gallery",
+                    "nav_path": "\/admin\/gallery",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 101,
+                            "module_id": 24,
+                            "name": "gallery.read",
+                            "slug": "gallery.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Gallery module permission for read action.",
+                            "module": {
+                                "id": 24,
+                                "name": "Gallery",
+                                "slug": "gallery",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 102,
+                            "module_id": 24,
+                            "name": "gallery.add",
+                            "slug": "gallery.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Gallery module permission for add action.",
+                            "module": {
+                                "id": 24,
+                                "name": "Gallery",
+                                "slug": "gallery",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 103,
+                            "module_id": 24,
+                            "name": "gallery.edit",
+                            "slug": "gallery.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Gallery module permission for edit action.",
+                            "module": {
+                                "id": 24,
+                                "name": "Gallery",
+                                "slug": "gallery",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 104,
+                            "module_id": 24,
+                            "name": "gallery.delete",
+                            "slug": "gallery.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Gallery module permission for delete action.",
+                            "module": {
+                                "id": 24,
+                                "name": "Gallery",
+                                "slug": "gallery",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 105,
+                            "module_id": 24,
+                            "name": "gallery.all",
+                            "slug": "gallery.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Gallery module permission for all action.",
+                            "module": {
+                                "id": 24,
+                                "name": "Gallery",
+                                "slug": "gallery",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "section": "Analytics",
+            "items": [
+                {
+                    "id": 25,
+                    "name": "Analytics",
+                    "slug": "analytics",
+                    "label": "Overview",
+                    "path": "\/admin\/analytics-overview",
+                    "description": "Analytics dashboards and reports.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Analytics",
+                    "nav_path": "\/admin\/analytics",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 106,
+                            "module_id": 25,
+                            "name": "analytics.read",
+                            "slug": "analytics.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Analytics module permission for read action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 107,
+                            "module_id": 25,
+                            "name": "analytics.all",
+                            "slug": "analytics.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Analytics module permission for all action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 25,
+                    "name": "Analytics",
+                    "slug": "analytics",
+                    "label": "Student Analytics",
+                    "path": "\/admin\/student-analytics-overview",
+                    "description": "Analytics dashboards and reports.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Analytics",
+                    "nav_path": "\/admin\/analytics",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 106,
+                            "module_id": 25,
+                            "name": "analytics.read",
+                            "slug": "analytics.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Analytics module permission for read action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 107,
+                            "module_id": 25,
+                            "name": "analytics.all",
+                            "slug": "analytics.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Analytics module permission for all action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 25,
+                    "name": "Analytics",
+                    "slug": "analytics",
+                    "label": "School Analytics",
+                    "path": "\/admin\/school-analytics-overview",
+                    "description": "Analytics dashboards and reports.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Analytics",
+                    "nav_path": "\/admin\/analytics",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 106,
+                            "module_id": 25,
+                            "name": "analytics.read",
+                            "slug": "analytics.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Analytics module permission for read action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 107,
+                            "module_id": 25,
+                            "name": "analytics.all",
+                            "slug": "analytics.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Analytics module permission for all action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 25,
+                    "name": "Analytics",
+                    "slug": "analytics",
+                    "label": "Subject \/ Units Analytics",
+                    "path": "\/admin\/subject-units-analytics-overview",
+                    "description": "Analytics dashboards and reports.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Analytics",
+                    "nav_path": "\/admin\/analytics",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 106,
+                            "module_id": 25,
+                            "name": "analytics.read",
+                            "slug": "analytics.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Analytics module permission for read action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 107,
+                            "module_id": 25,
+                            "name": "analytics.all",
+                            "slug": "analytics.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Analytics module permission for all action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                },
+                {
+                    "id": 25,
+                    "name": "Analytics",
+                    "slug": "analytics",
+                    "label": "City \/ School Analytics",
+                    "path": "\/admin\/city-school-analytics-overview",
+                    "description": "Analytics dashboards and reports.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Analytics",
+                    "nav_path": "\/admin\/analytics",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 106,
+                            "module_id": 25,
+                            "name": "analytics.read",
+                            "slug": "analytics.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Analytics module permission for read action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 107,
+                            "module_id": 25,
+                            "name": "analytics.all",
+                            "slug": "analytics.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Analytics module permission for all action.",
+                            "module": {
+                                "id": 25,
+                                "name": "Analytics",
+                                "slug": "analytics",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        },
+        {
+            "section": "Modules",
+            "items": [
+                {
+                    "id": 27,
+                    "name": "Assignments",
+                    "slug": "assignments",
+                    "label": "Assignments",
+                    "path": "\/admin\/assignments",
+                    "description": "Teacher assignment workflows.",
+                    "parent_id": null,
+                    "parent": null,
+                    "has_dropdown": false,
+                    "is_child": false,
+                    "nav_label": "Assignments",
+                    "nav_path": "\/admin\/assignments",
+                    "nav_section": "Modules",
+                    "nav_order": 0,
+                    "show_in_navigation": true,
+                    "permissions": [
+                        {
+                            "id": 113,
+                            "module_id": 27,
+                            "name": "assignments.read",
+                            "slug": "assignments.read",
+                            "guard_name": "web",
+                            "action": "read",
+                            "description": "Assignments module permission for read action.",
+                            "module": {
+                                "id": 27,
+                                "name": "Assignments",
+                                "slug": "assignments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 114,
+                            "module_id": 27,
+                            "name": "assignments.add",
+                            "slug": "assignments.add",
+                            "guard_name": "web",
+                            "action": "add",
+                            "description": "Assignments module permission for add action.",
+                            "module": {
+                                "id": 27,
+                                "name": "Assignments",
+                                "slug": "assignments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 115,
+                            "module_id": 27,
+                            "name": "assignments.edit",
+                            "slug": "assignments.edit",
+                            "guard_name": "web",
+                            "action": "edit",
+                            "description": "Assignments module permission for edit action.",
+                            "module": {
+                                "id": 27,
+                                "name": "Assignments",
+                                "slug": "assignments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 116,
+                            "module_id": 27,
+                            "name": "assignments.delete",
+                            "slug": "assignments.delete",
+                            "guard_name": "web",
+                            "action": "delete",
+                            "description": "Assignments module permission for delete action.",
+                            "module": {
+                                "id": 27,
+                                "name": "Assignments",
+                                "slug": "assignments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        },
+                        {
+                            "id": 117,
+                            "module_id": 27,
+                            "name": "assignments.all",
+                            "slug": "assignments.all",
+                            "guard_name": "web",
+                            "action": "all",
+                            "description": "Assignments module permission for all action.",
+                            "module": {
+                                "id": 27,
+                                "name": "Assignments",
+                                "slug": "assignments",
+                                "parent_id": null,
+                                "parent": null
+                            }
+                        }
+                    ],
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

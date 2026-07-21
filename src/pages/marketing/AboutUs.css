@@ -1,0 +1,111 @@
+.section_mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+.aboutus-hero {
+  background-image: url('../../assets/about-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section_mission span {
+  flex-shrink: 0;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
+
+.section_mission::before,
+.section_mission::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #e6e6e6;
+}
+
+.science-of-learning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.science-of-learning span {
+  flex-shrink: 0;
+  padding: 0 10px;
+}
+
+.science-of-learning::before,
+.science-of-learning::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 991px) {
+
+  /* Uncomment to hide the decorative lines on tablet/mobile */
+  /* .section_mission::before,
+  .section_mission::after,
+  .science-of-learning::before,
+  .science-of-learning::after {
+    display: none;
+  } */
+
+  .brighterFuture {
+    padding: 12px 14px;
+  }
+
+  .pompara {
+    /* font-size: 14px; */
+    padding: 12px 14px;
+    margin: 0;
+  }
+
+  .customHeadings {
+    font-size: 25px;
+  }
+
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 10px));
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs_headings {
+    padding: 44px 22px !important;
+  }
+  .aboutUs_headings.ilm-heading{
+    padding-top: 75px !important;
+  }
+
+  /* .ourMission {
+    padding: 16px;
+  } */
+
+  .brighterFuture {
+    padding: 12px 14px;
+  }
+
+  /* .pompara {
+    font-size: 14px;
+  } */
+
+  /* Uncomment to hide the decorative lines on mobile */
+  /* .section_mission::before,
+  .section_mission::after,
+  .science-of-learning::before,
+  .science-of-learning::after {
+    display: none;
+  } */
+
+  .brighterFuture_box {
+    padding: 0;
+  }
+}

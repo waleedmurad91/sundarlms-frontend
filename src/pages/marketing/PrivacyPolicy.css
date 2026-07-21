@@ -1,0 +1,115 @@
+
+    :root {
+      --crimson: #9b1c2e;
+      --crimson-dark: #6e1120;
+      --navy: #1a1f5e;
+      --gold: #c49a1a;
+      --bg: #f4f6fb;
+    }
+    /* heroPrivacy */
+    .heroPrivacy { 
+        padding: 60px;
+        background-color: #eff3ff; 
+    }
+    .heroPrivacy .badge-pill {
+        background: var(--navy); 
+        color: #fff; font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        border-radius: 20px;
+        padding: 6px 18px; 
+        font-weight: 700; 
+    } 
+    .img_kidsilm img {
+        margin: 25px auto;
+    }
+
+    /* Effective date */
+    .eff-date { 
+        color: gray; 
+        font-weight: 700; 
+        text-transform: uppercase; 
+        letter-spacing: 0.09em; 
+        font-size: 0.88rem; 
+    }
+
+    /* Intro box */
+    .intro-box { 
+        border-left: 4px solid var(--navy); 
+        background: #fff; 
+        border-radius: 12px; 
+    }
+
+    /* Section card */
+    .pp-card { 
+        border-top: 3px solid var(--crimson) !important; 
+        border-radius: 10px !important; 
+    }
+    .pp-card.gold-top { 
+        border-top-color:  var(--crimson) !important; 
+    }
+    .pp-num { 
+        color: var(--crimson); 
+        font-size: 0.78rem; 
+        font-weight: 700; 
+        letter-spacing: 0.1em; 
+        text-transform: uppercase; 
+    }
+    .pp-num.gold { 
+        color:  var(--crimson);
+     }
+    .pp-title { 
+        font-family: Arial, serif; 
+        color: var(--navy); 
+        font-size: 1.3rem; 
+    }
+
+    /* Bullet list */
+    .pp-list { 
+        list-style: none; 
+        padding: 0; 
+    }
+    .pp-list li {
+        padding: 5px 0 5px 22px; 
+        position: relative; 
+        color: #444; 
+        font-size: 0.97rem; 
+        line-height: 1.75; 
+    }
+    .pp-list li::before {
+      content: ''; 
+      position: absolute; 
+      left: 0; 
+      top: 14px;
+      width: 8px; 
+      height: 8px; 
+      border-radius: 50%; 
+      background: var(--crimson);
+    }
+
+    /* Pills */
+    .pp-pill { 
+        background: #fef3f4; 
+        border: 1px solid #f5c6cb; 
+        color: var(--crimson-dark); 
+        border-radius: 20px; 
+        font-size: 0.88rem; 
+        font-weight: 600; 
+        padding: 6px 16px; 
+        display: inline-block; 
+        margin: 4px 4px 4px 0; 
+    }
+
+    /* Highlight */
+    .highlight-box { 
+        background: #eef2ff; 
+        border-left: 4px solid var(--navy); 
+        border-radius: 0 6px 6px 0; 
+        color: var(--navy); }
+
+    /* Agreement */
+    .agreement-box { 
+        background: linear-gradient(135deg, var(--crimson), 
+        var(--crimson-dark)); 
+        border-radius: 10px; 
+        color: #fff; 
+    }

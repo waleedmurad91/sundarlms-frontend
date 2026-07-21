@@ -1,0 +1,55 @@
+/* Hero with News Layout */
+
+.hero-with-news-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.pmc-prizes-hero{
+  background-image: url('../../assets/PMC-Prizes-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-content-main {
+  flex: 1;
+}
+
+.no-news .news-sidebar {
+  display: none;
+}
+
+.pmc-hero {
+  background-image: url('../../assets/PMC-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ss-subheading span::before,
+.ss-subheading span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 2px;
+  background-color: #e6e6e6;
+}
+
+.ss-subheading span::before {
+  left: 0;
+}
+
+.ss-subheading span::after {
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-with-news-layout {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,126 @@
+.hero-with-news-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.ilm-hero {
+  position: relative;
+  background-image: url('../../assets/ILM-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content-main {
+  flex: 1;
+}
+
+.language-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  transform: none;
+  display: flex;
+  gap: 9px;
+  font-size: 13px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5391F5;
+  border: 1px solid #5391F5;
+  color: #fff;
+  border-right: 0;
+  padding: 8px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.ilm-content {
+    display: flex;
+    flex-direction: column;
+    height: stretch;
+    justify-content: center;
+}
+.news-title {
+  text-align: start;
+}
+.hero-with-news-layout-fixed {
+  direction: ltr;
+}
+
+/* Text ko phir bhi RTL rakho */
+.hero-with-news-layout-fixed .hero-content-main,
+.hero-with-news-layout-fixed .ilm-news-sidebar {
+  direction: rtl;
+  text-align: right;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-with-news-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .language-btn {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+/* Mobile fixes */
+@media (max-width: 640px) {
+  .ilm-hero,
+  .ilm-heading {
+    min-height: 220px;
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+    position: relative;
+  }
+
+  /* Give enough top space so the absolute button doesn't overlap the badge */
+  .ilm-heading .flex.items-center {
+    margin-top: 28px;
+  }
+
+  .language-btn {
+    position: static;
+    margin: 12px auto 0;
+    flex-direction: row;
+    width: max-content;
+    border-radius: 999px;
+  }
+
+  /* Prevent the CTA card from overflowing on small screens */
+  .rounded-4xl {
+    border-radius: 1.25rem;
+  }
+
+  /* Ensure container doesn't cause horizontal scroll */
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 380px) {
+  .ilm-hero,
+  .ilm-heading {
+    min-height: 200px;
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .language-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .language-btn {
+    position: absolute;
+    right: 40px !important;
+    top: 145px;
+    flex-direction: column;
+  }
+}

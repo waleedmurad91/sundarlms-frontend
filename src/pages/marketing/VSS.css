@@ -1,0 +1,30 @@
+/* Hero with News Layout */
+.hero-with-news-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+.vss-hero {
+  background-image: url('../../assets/VSS-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-with-news-layout.no-news {
+  grid-template-columns: 1fr;
+}
+
+.hero-content-main {
+  flex: 1;
+}
+.no-news .news-sidebar{
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-with-news-layout {
+    grid-template-columns: 1fr;
+  }
+}

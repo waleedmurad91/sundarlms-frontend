@@ -1,0 +1,11 @@
+.faculty-hero {
+  background-image: url('../../assets/faculty-hero-image.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width:767px) {
+    .faculty-hero{
+        padding: 44px 22px !important;
+    }
+}
