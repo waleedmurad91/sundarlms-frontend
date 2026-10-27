@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { getAllContest } from "@/api/studentApi";
 import {
   CONTEST_ROUTE,
+  STUDENT_CONTEST_GATE_ENABLED,
   STUDENT_CONTEST_STATUS_UPDATED_EVENT,
   getContestPromptState,
   isContestGateExemptPath,
@@ -76,7 +77,10 @@ const ContestRequiredPrompt = ({ blockedPath, error, onClose, onRetry }) => (
   </div>
 );
 
-const StudentContestGate = () => {
+const StudentContestGate = () =>
+  STUDENT_CONTEST_GATE_ENABLED ? <ContestGate /> : <Outlet />;
+
+const ContestGate = () => {
   const location = useLocation();
   const isContestRoute = location.pathname === CONTEST_ROUTE;
   const isExemptPath = isContestGateExemptPath(location.pathname);
