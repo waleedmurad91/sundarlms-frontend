@@ -1,4 +1,6 @@
 export const CONTEST_ROUTE = "/student/contest";
+// Set to true to re-enable the post-login "Join a contest" popup and redirect.
+export const STUDENT_CONTEST_GATE_ENABLED = false;
 export const STUDENT_CONTEST_STATUS_STORAGE_KEY =
   "student_contest_registration_required";
 export const STUDENT_CONTEST_STATUS_UPDATED_EVENT =
@@ -55,6 +57,8 @@ const hasContestRegistration = (contest, { isPmc = false } = {}) => {
 };
 
 export const isContestRegistrationRequired = (response) => {
+  if (!STUDENT_CONTEST_GATE_ENABLED) return false;
+
   const payload = response?.data ?? response ?? {};
   const pmc = payload?.pmc ?? {};
   const rmc = payload?.rmc ?? {};
@@ -78,6 +82,8 @@ export const isContestGateExemptPath = (pathname = "") =>
   STUDENT_CONTEST_GATE_EXEMPT_PATHS.includes(pathname);
 
 export const readContestRegistrationRequired = () => {
+  if (!STUDENT_CONTEST_GATE_ENABLED) return false;
+
   const rawValue = sessionStorage.getItem(STUDENT_CONTEST_STATUS_STORAGE_KEY);
 
   if (rawValue === "true") return true;
